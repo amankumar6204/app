@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+@use '../core/topography' as *;
+@use '../components/button' as *;
+
+.success {
+  img {
+    width: 18%;
+  }
+
+  h1 {
+    @include font-success-h1-bold;
+  }
+
+  p {
+    @include font-p-regular;
+
+    strong {
+      font-weight: $fw-bold;
+    }
+  }
+
+  button {
+    @include button;
+  }
+}

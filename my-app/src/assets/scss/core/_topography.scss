@@ -1,0 +1,105 @@
+@use '../abstracts/variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@mixin font-h1-bold {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: $fs-h1;
+  line-height: $lh-root;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-neutral-dark-slate-grey;
+}
+
+@mixin font-p-regular {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: $fw-medium;
+  font-size: $fs-p;
+  line-height: $lh-root;
+  /* identical to box height, or 125% */
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-neutral-dark-slate-grey;
+}
+
+@mixin font-ul-bold {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: $fw-medium;
+  font-size: $fs-p;
+  line-height: $lh-root;
+  /* identical to box height, or 125% */
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-neutral-charcoal-grey;
+}
+
+@mixin font-label-bold {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: $fs-label;
+  line-height: $lh-root;
+  /* identical to box height, or 125% */
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-neutral-dark-slate-grey;
+}
+
+@mixin font-input-regular {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: $fw-medium;
+  font-size: $fs-input;
+  line-height: $lh-root;
+  /* identical to box height, or 125% */
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-neutral-grey;
+}
+
+@mixin font-input-placeholder-regular {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: $fw-medium;
+  font-size: $fs-input;
+  line-height: $lh-root;
+  /* identical to box height, or 125% */
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-neutral-grey;
+}
+
+@mixin font-button-bold {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: $fs-button;
+  line-height: $lh-root;
+  /* identical to box height, or 125% */
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-neutral-white;
+}
+
+@mixin font-success-h1-bold {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: $fs-h1;
+  line-height: $lh-success-h1;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-neutral-dark-slate-grey;
+}

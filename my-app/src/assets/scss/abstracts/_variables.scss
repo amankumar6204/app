@@ -1,0 +1,52 @@
+// Colors
+
+// Primary
+
+$clr-primary-tomato: hsl(4, 100%, 67%);
+
+// Neutral
+
+$clr-neutral-dark-slate-grey: hsl(234, 29%, 20%);
+$clr-neutral-charcoal-grey: hsl(235, 18%, 26%);
+$clr-neutral-grey: hsl(231, 7%, 60%);
+$clr-neutral-white: hsl(0, 0%, 100%);
+$clr-neutral-error-tomato: hsla(4, 100%, 67%, 0.172);
+
+// Fonts
+
+$ff-roboto: 'Roboto', sans-serif;
+
+// Font Sizes
+
+$fs-base: 1rem;
+$fs-h1: 3rem;
+$fs-p: 0.85rem;
+$fs-label: 0.7rem;
+$fs-input: 0.85rem;
+$fs-button: 0.9rem;
+
+// Font Weights
+
+$fw-medium: 500;
+$fw-bold: 700;
+
+// Line Heights
+
+$lh-root: 1.5;
+$lh-success-h1: 1.1;
+
+// Widths
+
+$max-width-body: 1440px;
+$max-width-wrapper: 800px;
+$min-width-body: 375px;
+
+// Heights
+
+$min-height-body: 100vh;
+
+// Border
+
+// Border Radius
+
+$br-wrapper: 2rem;

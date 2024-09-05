@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as *;
+
+.hero {
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    width: 100%;
+  }
+}

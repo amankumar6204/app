@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+@use '../core/topography' as *;
+
+@mixin input() {
+  border-radius: 0.5rem;
+  border: 1px solid $clr-neutral-grey;
+
+  padding: 0.7em;
+  margin-bottom: 1rem;
+
+  cursor: pointer;
+
+  &::placeholder {
+    padding-left: 0.7em;
+
+    @include font-input-placeholder-regular;
+    color: $clr-neutral-grey;
+  }
+
+  &:focus,
+  &:active {
+    outline: transparent;
+  }
+}

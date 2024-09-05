@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+@use '../core/topography' as *;
+
+@mixin button() {
+  border-radius: 0.5rem;
+  border: none;
+
+  padding: 1em;
+
+  background-color: $clr-neutral-dark-slate-grey;
+
+  color: $clr-neutral-white;
+
+  @include font-button-bold;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $clr-primary-tomato;
+  }
+}

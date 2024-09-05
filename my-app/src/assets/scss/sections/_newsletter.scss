@@ -1,0 +1,85 @@
+@use '../abstracts/variables' as *;
+@use '../core/topography' as *;
+@use '../components/input' as *;
+@use '../components/button' as *;
+
+.newsletter-wrapper {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-inline: 2em;
+
+  gap: 1.5rem;
+
+  .signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    &__title {
+      @include font-h1-bold;
+    }
+
+    &__description {
+      @include font-p-regular;
+    }
+
+    &__features {
+      @include font-ul-bold;
+      list-style: none;
+      margin: 0;
+      padding-inline: 0;
+
+      .feature__item {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .label-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      @include font-label-bold;
+
+      p {
+        color: $clr-primary-tomato;
+      }
+    }
+
+    input {
+      @include input;
+    }
+
+    .email-error {
+      border: 1px solid $clr-primary-tomato;
+      color: $clr-primary-tomato;
+      font-weight: $fw-medium;
+      background-color: $clr-neutral-error-tomato;
+    }
+
+    button {
+      @include button;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .newsletter-wrapper {
+    padding-inline: 1em;
+  }
+}

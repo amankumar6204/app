@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as *;
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 1rem;
+
+  padding: 1.3em;
+}
+
+@media screen and (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    section:nth-child(1) {
+      order: 2;
+    }
+
+    section:nth-child(2) {
+      order: 1;
+    }
+
+    min-height: 100vh;
+
+    padding: 0;
+    padding-bottom: 2em;
+  }
+}
